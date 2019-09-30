@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/odynik/dashboard#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "pipe": "^1.1.0",
