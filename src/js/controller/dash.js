@@ -10,7 +10,7 @@ angular.module('angular_hw')
         $scope.uploadFile = function() {
 
             var file = $scope.myFile;
-            console.log('FileUploadCtrl: File is ' );
+            console.log('FileUploadCtrl: File is ', file );
             console.dir(file);
             var uploadUrl = "/fileUpload";
             fileUpload.uploadFileToUrl(file, uploadUrl);

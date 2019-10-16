@@ -7,12 +7,12 @@ angular.module('angular_hw')
            $http.post(uploadUrl, fd, {
               transformRequest: angular.identity,
               headers: {'Content-Type': undefined}
-           })
-           .success(function() {
-            console.log('Succesfully uploaded....!!!' );
-           })
-           .error(function() {
+           }).then(function successCallback(response) {
+                console.log('Succesfully uploaded....!!!' );
+            }, function errorCallback(response) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
             console.log('Error! The files was not uploaded!' );
-           });
-        }
+            });
+        }   
      }]);
