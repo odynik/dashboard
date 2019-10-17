@@ -2,9 +2,9 @@
 <html>
 <body>
     <h1> {{ message }} </h1>
-    <div ng-controller = "FileUploadCtrl">
-        <input type = "file" file-model = "myFile"/>
-        <button ng-click = "uploadFile()">Load Data</button>
+    <div>
+        <input type = "file" file-reader = "DatasetFile"/>
+        <div>{{DatasetFile}}</div>
     </div>
 </div>
 </body>

@@ -1,16 +1,23 @@
 angular.module('angular_hw')
-    .directive('fileModel', ['$parse', function ($parse) {
-        return {
-           restrict: 'A',
-           link: function(scope, element, attrs) {
-              var model = $parse(attrs.fileModel);
-              var modelSetter = model.assign;
-              
-              element.bind('change', function() {
-                 scope.$apply(function() {
-                    modelSetter(scope, element[0].files[0]);
-                 });
-              });
-           }
-        };
-     }]);
+    .directive('fileReader', function() {
+      return {
+        scope: {
+          fileReader:"="
+        },
+        link: function(scope, element) {
+          element.on('change', function(changeEvent) {
+            var files = changeEvent.target.files;
+            if (files.length) {
+              var r = new FileReader();
+              r.onload = function(e) {
+                  var contents = e.target.result;
+                  scope.$apply(function () {
+                    scope.fileReader = contents;
+                  });
+              };
+              r.readAsText(files[0]);
+            }
+          });
+        }
+      };
+    });
