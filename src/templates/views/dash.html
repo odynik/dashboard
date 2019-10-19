@@ -6,6 +6,11 @@
         <input type = "file" file-reader = "DatasetFile"/>
         <div>{{DatasetFile}}</div>
     </div>
-</div>
+    <div ng-controller="chartCtrl">
+        <h2>Place the chart {{ChartLocation}}</h2>
+        <bars-chart chart-data="myData"></bars-chart>
+        <h3>The Chart data = {{myData}}</h3>
+    </div>
 </body>
+
 </html>
