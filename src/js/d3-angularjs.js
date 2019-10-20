@@ -1,5 +1,5 @@
 angular.module('d3', [])
-    .factory('d3', [function () {
+    .factory('d3Factory', [function () {
         var exports = {};
         var version = "4.13.0";
 
