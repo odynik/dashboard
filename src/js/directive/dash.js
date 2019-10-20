@@ -53,9 +53,9 @@ angular.module('angular_hw')
             })])
             .range([rawSvg.attr("height") - padding, 0]);
 
-          xAxisGen = d3.axisBottom(xScale).tickFormat(salesDataToPlot.length - 1);
+          xAxisGen = d3.axisBottom(xScale);
 
-          yAxisGen = d3.axisLeft(yScale).tickFormat(5);
+          yAxisGen = d3.axisLeft(yScale);
 
           lineFun = d3.line()
             .x(function (d) {
