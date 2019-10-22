@@ -6,40 +6,8 @@ const del = require('del');
 const scripts = require('./scripts');
 const styles = require('./styles');
 
-// Some pointless comments for our project.
-
 var devMode = false;
 
-/*function css(){
-    return gulp
-        .src(styles)
-        .pipe(concat('main.css'))
-        .pipe(gulp.dest('dist/css'))
-        .pipe(browserSync.stream());
-}
-
-function js() {
-    return gulp
-        .src(scripts)
-        .pipe(concat('scripts.js'))
-        .pipe(gulp.dest('./dist/js'))
-        .pipe(browserSync.stream());
-}
-
-function html() {
-    return gulp
-        .src('./src/templates/!**!/!*.html')
-        .pipe(gulp.dest('./dist/'))
-        .pipe(browserSync.stream());
-}
-
-function reload(){
-    browserSync.reload();
-}
-
-function watch(){
-
-}*/
 gulp.task('css', function() {
     return gulp
         .src(styles)
