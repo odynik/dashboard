@@ -1,4 +1,4 @@
-# dashboard
+# S2Hack4Energy Dashboard
 Hello World AngularJS app with D3.
 
 ### How to use the sample code.
