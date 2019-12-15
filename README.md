@@ -1,18 +1,23 @@
-# S2Hack4Energy Dashboard
-Hello World AngularJS app with D3.
+# Dynamic Dashboard with AngularJS
+This repo will host a Single-Page Web App dashboard.
 
-### How to use the sample code.
-1. Unzip the file `[S2Hack4Energy]_CH1_SPEAR_CodeSample_AngularJSD3.zip`
-2. Go to the `[S2Hack4Energy]_CH1_SPEAR_CodeSample_AngularJSD3` directory.
-3. Install nodejs and npm (npm version `6.4.0` or above & nodejs version `10.15` or above)
-4. Execute `npm install`
-5. Install gulp in dev dependencies (`npm install --save-dev gulp`) and also as a command line tool (`npm install --global gulp-cli`). Use CLI version `2.2.0` or above Local version `4.0.0` or above.
-5. Execute the task `gulp dev`
-6. Now you should see the AngularJS App combined with D3 running on your browser.
+### Dependencies
+See the `package.json` file.
+### Installation instructions.
+Commands,
+1. git clone `this repo`
+2. cd in the folder of `this repo`
+3. execute `npm install`
+4. ....
+5. execute `gulp serve`
 
-`Note: Feel free to use any framework or library you want.`
+### Dashboard features.
+1. Simple layout
+2. Graphs & Visualizations
+3. 
 
-`Note: Ubuntu install nodejs`
-`sudo apt-get install curl`
-`curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`
-`sudo apt-get install nodejs`
+### Architecture.
+![Dashboard Architecture](./docs/img/architecture.jpg)
+
+### Documentation & Information
+Have a look in the `./docs` directory
