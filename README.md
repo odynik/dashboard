@@ -1,4 +1,7 @@
+
 # Dynamic Dashboard with AngularJS
+[![Build Status](https://travis-ci.org/odynik/dashboard.svg?branch=dynamic_dashboard)](https://travis-ci.org/odynik/dashboard)
+
 This repo will host a Single-Page Web App dashboard.
 
 ### Dependencies
@@ -17,7 +20,9 @@ Commands,
 3. 
 
 ### Architecture.
-![Dashboard Architecture](./docs/img/architecture.jpg)
+![Dashboard Architecture](./docs/img/DashboardArchitecture.jpg)
 
 ### Documentation & Information
 Have a look in the `./docs` directory
+
+### Testing & Coverage
