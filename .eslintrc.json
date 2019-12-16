@@ -1,0 +1,9 @@
+{
+  "extends": ["eslint:recommended", "google"],
+  "rules": {
+    // Additional, per-project rules...
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"]
+  },
+  "plugins": [    "json",    "markdown"  ]
+}

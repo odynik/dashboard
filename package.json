@@ -4,7 +4,8 @@
   "description": "This is a hello world example of a angular app with vega",
   "main": "index.js",
   "scripts": {
-    "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js"
+    "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js",
+    "lint": "eslint ./src/js/*.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,11 @@
     "angular-mocks": "^1.7.9",
     "angular-ui-router": "^1.0.23",
     "browser-sync": "^2.26.7",
+    "eslint": "^6.7.2",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-angular": "^4.0.1",
+    "eslint-plugin-json": "^2.0.1",
+    "eslint-plugin-markdown": "^1.0.1",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "jasmine-core": "^3.5.0",
@@ -42,6 +48,8 @@
     "axios": "^0.19.0",
     "d3": "^4.13.0",
     "del": "^4.1.0",
-    "gridstack": "^0.4.0"
+    "espree": "^6.1.2",
+    "gridstack": "^0.4.0",
+    "help": "^3.0.2"
   }
 }
