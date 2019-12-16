@@ -26,3 +26,6 @@ Commands,
 Have a look in the `./docs` directory
 
 ### Testing & Coverage
+1. Run static code analysis for quality of code with `npm run lint`
+    1. Check the html reporting page of the static code analysis results in `./static_code_analysis.html`
+2. Run the test for the web app with `npm test`
