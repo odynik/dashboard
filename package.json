@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js",
-    "lint": "eslint ./src/js/*.js"
+    "lint": "eslint ./**/*.js -f node_modules/eslint-html-reporter/reporter.js -o static_code_analysis.html"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "browser-sync": "^2.26.7",
     "eslint": "^6.7.2",
     "eslint-config-google": "^0.14.0",
+    "eslint-html-reporter": "^0.7.4",
     "eslint-plugin-angular": "^4.0.1",
     "eslint-plugin-json": "^2.0.1",
     "eslint-plugin-markdown": "^1.0.1",
