@@ -3,7 +3,8 @@
   "rules": {
     // Additional, per-project rules...
     "semi": ["error", "always"],
-    "quotes": ["error", "double"]
+    "quotes": ["error", "double"],
+    "linebreak-style": ["windows"]
   },
-  "plugins": [   "angular", "json",    "markdown"  ]
+  "plugins": ["angular", "json",    "markdown"  ]
 }

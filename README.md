@@ -2,7 +2,8 @@
 # Dynamic Dashboard with AngularJS
 [![Build Status](https://travis-ci.org/odynik/dashboard.svg?branch=dynamic_dashboard)](https://travis-ci.org/odynik/dashboard)
 
-This repo will host a Single-Page Web App dashboard.
+This repo will host a Single-Page AngularJS App dashboard.
+The repo is using karma and jasmine for testing and also eslint for static code analysis to provide code quality.
 
 ### Dependencies
 See the `package.json` file.

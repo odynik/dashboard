@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js",
-    "lint": "eslint ./**/*.js -f node_modules/eslint-html-reporter/reporter.js -o static_code_analysis.html"
+    "lint": "eslint ./**/*.js",
+    "lint_report": "eslint ./**/*.js -f node_modules/eslint-html-reporter/reporter.js -o static_code_analysis.html"
   },
   "repository": {
     "type": "git",
