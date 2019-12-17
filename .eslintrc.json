@@ -4,7 +4,7 @@
     // Additional, per-project rules...
     "semi": ["error", "always"],
     "quotes": ["error", "double"],
-    "linebreak-style": ["windows"]
+    "linebreak-style": ["error", "windows"]
   },
-  "plugins": ["angular", "json",    "markdown"  ]
+  "plugins": ["angular", "json", "markdown"]
 }
