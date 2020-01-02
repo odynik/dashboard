@@ -1,5 +1,5 @@
 {
-  "name": "angular_hw",
+  "name": "ddash",
   "version": "1.0.0",
   "description": "This is a hello world example of a angular app with vega",
   "main": "index.js",
@@ -26,6 +26,10 @@
   "homepage": "https://github.com/odynik/dashboard#readme",
   "devDependencies": {
     "angular": "^1.7.9",
+    "angular-animate": "^1.7.9",
+    "angular-aria": "^1.7.9",
+    "angular-material": "^1.1.20",
+    "angular-messages": "^1.7.9",
     "angular-mocks": "^1.7.9",
     "angular-ui-router": "^1.0.23",
     "browser-sync": "^2.26.7",

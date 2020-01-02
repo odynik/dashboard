@@ -1,5 +1,5 @@
 //Directive for reading the dataset file in order to import the data in the $scope variables.
-angular.module('angular_hw')
+angular.module('ddash')
   .directive('fileReader', function () {
     return {
       scope: {
@@ -24,7 +24,7 @@ angular.module('angular_hw')
   });
 
   //Directive for creating a d3 chart.
-angular.module('angular_hw')
+angular.module('ddash')
   .directive('aChart', ['d3Factory', function (d3) {
     return {
       restrict: 'EA',
