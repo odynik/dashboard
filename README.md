@@ -13,7 +13,7 @@ Commands,
 2. cd in the folder of `this repo`
 3. execute `npm install`
 4. ....
-5. execute `gulp serve`
+5. execute `gulp dev`
 
 ### Dashboard features.
 1. Simple layout

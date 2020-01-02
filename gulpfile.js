@@ -31,6 +31,13 @@ gulp.task('html', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('img', function() {
+    return gulp
+        .src('./src/img/icons/*.svg')
+        .pipe(gulp.dest('./dist/img/icons'))
+        .pipe(browserSync.stream());
+});
+
 gulp.task('browser_sync', function() {
     browserSync.init({
 /*        watch: true,*/
@@ -50,6 +57,7 @@ gulp.task('watchFiles', function() {
     gulp.watch('./src/css/**/*.css', gulp.series('css'));
     gulp.watch('./src/js/**/*.js', gulp.series('js'));
     gulp.watch('./src/templates/**/*.html', gulp.series('html'));
+    gulp.watch('./src/img/icons/*.svg', gulp.series('img'));
 });
 
 gulp.task('clean', function() {
@@ -57,7 +65,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('clean_build', gulp.series('clean',gulp.parallel('css', 'js', 'html')));
-gulp.task('build', gulp.parallel('css', 'js', 'html'));
+gulp.task('build', gulp.parallel('css', 'js', 'html', 'img'));
 gulp.task('watch', gulp.parallel('watchFiles', 'browser_sync'));
 
 gulp.task('dev', gulp.series('build', 'watch'), function() {
