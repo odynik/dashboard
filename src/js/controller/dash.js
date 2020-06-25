@@ -7,11 +7,11 @@ angular.module("ddash")
 ]);
 
 angular.module("ddash")
-    .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $log) {
-            $scope.toggleLeft = buildDelayedToggler('left');
-            $scope.toggleRight = buildToggler('right');
-            $scope.isOpenRight = function(){
-            return $mdSidenav('right').isOpen();
+    .controller("SideBarCtrl", function ($scope, $timeout, $mdSidenav, $log) {
+            $scope.toggleLeft = buildDelayedToggler("left");
+            $scope.toggleRight = buildToggler("right");
+            $scope.isOpenRight = function() {
+            return $mdSidenav("right").isOpen();
             };
         
             /**
@@ -58,20 +58,20 @@ angular.module("ddash")
             };
             }
         })
-        .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+        .controller('LeftSideBarCtrl', function ($scope, $timeout, $mdSidenav, $log) {
             $scope.close = function () {
             // Component lookup should always be available since we are not using `ng-if`
-            $mdSidenav('left').close()
+            $mdSidenav("left").close()
                 .then(function () {
                 $log.debug("close LEFT is done");
                 });
         
             };
         })
-        .controller('RightCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+        .controller('RightSideBarCtrl', function ($scope, $timeout, $mdSidenav, $log) {
             $scope.close = function () {
             // Component lookup should always be available since we are not using `ng-if`
-            $mdSidenav('right').close()
+            $mdSidenav("right").close()
                 .then(function () {
                 $log.debug("close RIGHT is done");
                 });
